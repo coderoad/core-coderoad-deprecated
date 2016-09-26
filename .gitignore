@@ -1,0 +1,10 @@
+# Common
+.DS_Store
+node_modules
+npm-debug.log
+.vscode
+
+# Testing
+e2e
+src/__coverage__
+src/__tests__/__cache__
