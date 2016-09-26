@@ -37,6 +37,7 @@
     "src/typings/common/global.d.ts",
     "src/typings/common/index.d.ts",
     "src/typings/common/package-json.d.ts",
+    "src/typings/editor/index.d.ts",
     "src/typings/globals/assertion-error/index.d.ts",
     "src/typings/globals/atom-plugin-command-line/index.d.ts",
     "src/typings/globals/atom/custom.d.ts",

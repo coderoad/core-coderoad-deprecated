@@ -36,3 +36,4 @@
 /// <reference path="globals/text-buffer/index.d.ts" />
 /// <reference path="tests/index.d.ts" />
 /// <reference path="tutorial/index.d.ts" />
+/// <reference path="editor/index.d.ts" />
