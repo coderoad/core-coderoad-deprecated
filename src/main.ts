@@ -11,7 +11,7 @@ import * as injectTapEventPlugin from 'react-tap-event-plugin';
 
 
 export default class Main {
-  public store: Redux.Store;
+  public store: Redux.Store<any>;
   private side: HTMLElement;
   private statusBarTile: StatusBar.IStatusBarView|null;
   private subscriptions: any;

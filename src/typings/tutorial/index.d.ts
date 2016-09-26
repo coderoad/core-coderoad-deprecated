@@ -6,12 +6,13 @@ declare namespace Tutorial {
   }
 
   export interface Info {
-    name: string;
+    name?: string;
+    title: string;
     description?: string;
     keywords?: string[];
     version?: string;
     latest?: string;
-    isLatest: boolean;
+    isLatest?: boolean;
   }
 
   export interface Config {
