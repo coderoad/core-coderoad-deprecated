@@ -1,23 +1,16 @@
-/// <reference path="../../typings/globals/jest/index.d.ts" />
 /// <reference path="../../typings/common/global.d.ts" />
+/// <reference path="../../typings/globals/jest/index.d.ts" />
+/// <reference path="../../typings/globals/node/index.d.ts" />
 
+jest.setMock('../../index', require('../../__mocks__/editor/index.js'));
 import dir from './index';
-import {atomPath} from '../../__tests__/mocks/atom';
 
 describe('dir reducer', () => {
 
-  afterEach(() => {
-    global.atom = null;
-  });
-
-  it('should return the project directory in Atom', () => {
-    const pathToDir = './path/to/dir'; 
-    global.atom = atomPath(pathToDir);
-    expect(dir('')).toBe(pathToDir);
-  });
-
-  it('should throw an error if no project directory is found', () => {
-    expect(() => dir('')).toThrowError(/No project directory/);
+  it('should return the project directory from the editor', () => {
+    const directory = './path/to/dir';
+    // directory() => './path/to/dir' is default
+    expect(dir('')).toBe(directory);
   });
 
 });

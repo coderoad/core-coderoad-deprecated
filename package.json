@@ -25,7 +25,8 @@
   "repository": "https://github.com/coderoad/core-coderoad",
   "scripts": {
     "compile": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "mocks": "tsc -p ./src/__mocks__"
   },
   "dependencies": {
     "atom-plugin-command-line": "1.0.2",
