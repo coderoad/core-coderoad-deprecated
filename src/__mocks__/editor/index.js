@@ -1,10 +1,9 @@
 "use strict";
-var jest_1 = require('jest');
 exports.editor = {
     name: 'editorName',
     directory: function () { return './path/to/dir'; },
     action: {
-        toggleDevTools: jest_1.default.fn(),
+        toggleDevTools: function () { return true; },
         save: function () { return true; },
         open: function (file) { return true; },
         insert: function (text) { return true; },
