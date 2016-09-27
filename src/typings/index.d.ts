@@ -17,7 +17,6 @@
 /// <reference path="globals/mixto/index.d.ts" />
 /// <reference path="globals/node-file-exists/index.d.ts" />
 /// <reference path="globals/node/index.d.ts" />
-/// <reference path="globals/proxyquire/index.d.ts" />
 /// <reference path="globals/react-addons-shallow-compare/index.d.ts" />
 /// <reference path="globals/react-addons-test-utils/index.d.ts" />
 /// <reference path="globals/react-dom/index.d.ts" />

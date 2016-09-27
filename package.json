@@ -71,7 +71,7 @@
     ],
     "testRegex": "src/*/.*\\.test\\.(ts|tsx|js)$",
     "coverageDirectory": "src/__coverage__",
-    "collectCoverage": false,
+    "collectCoverage": true,
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "src/typings/",

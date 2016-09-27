@@ -8,5 +8,4 @@ npm-debug.log
 e2e
 src/__coverage__
 src/__tests__/__cache__
-src/__mocks__/**/*.js
-src/__mocks__/**/*.js.map
+src/__mocks__/**/*.ts

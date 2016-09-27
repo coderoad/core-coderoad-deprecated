@@ -1,4 +1,4 @@
-import {ALERT_CLOSE,  ALERT_OPEN, ALERT_REPLAY} from './types';
+import {ALERT_CLOSE, ALERT_OPEN, ALERT_REPLAY} from './types';
 
 // alert styles
 export const colors = {

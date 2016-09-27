@@ -37,6 +37,7 @@
     "no-empty": true,
     "no-eval": true,
     "no-inferrable-types": true,
+    "no-reference": false,
     "no-shadowed-variable": true,
     "no-string-literal": true,
     "no-switch-case-fall-through": true,

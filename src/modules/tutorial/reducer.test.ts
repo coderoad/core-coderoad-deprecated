@@ -16,7 +16,7 @@ describe('tutorial reducer', () => {
       dir: 'path/to/file',
     };
     const action = { type: 'TUTORIAL_SET', payload };
-    const expected = {}
+    const expected = {};
     expect(reducer(undefined, action)).toEqual(expected);
   });
 

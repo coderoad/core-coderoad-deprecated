@@ -2,7 +2,7 @@
 /// <reference path="../../typings/common/global.d.ts" />
 
 import reducer, { _alert, colors } from './index';
-import { ALERT_OPEN, ALERT_REPLAY, ALERT_CLOSE } from './types';
+import { ALERT_CLOSE, ALERT_OPEN, ALERT_REPLAY } from './types';
 
 describe('alert reducer', () => {
 
