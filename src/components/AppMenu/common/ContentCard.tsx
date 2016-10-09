@@ -1,7 +1,6 @@
-import Radium from 'radium';
 import * as React from 'react';
 
-import {Markdown} from '../index';
+import {Markdown} from '../../index';
 import {Card, CardHeader, CardText} from 'material-ui/Card';
 
 const styles = {
@@ -10,7 +9,6 @@ const styles = {
   },
 };
 
-@Radium()
 const ContentCard: React.StatelessComponent<{
   title: string, content?: string
 }> = ({title, content}) => (
