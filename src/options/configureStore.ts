@@ -8,7 +8,7 @@ const configureStore = ({reducer, devMode}) => {
 
   // use logger if devMode
   if (devMode) {
-    const logger = (createLogger as any)();
+    const logger = (createLogger as any)({diff: true});
     middlewares.push(logger);
   } else {
     process.env.NODE_ENV = 'production';
