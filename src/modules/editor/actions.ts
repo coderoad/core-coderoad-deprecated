@@ -1,3 +1,4 @@
+import {testRun} from '../../actions';
 import {
   EDITOR_DEVTOOLS_TOGGLE, EDITOR_INSERT, EDITOR_OPEN,
   EDITOR_SAVE, EDITOR_SCROLL, EDITOR_SET,
@@ -22,8 +23,11 @@ export function editorOpen(file: string, options: Object):
   };
 }
 
-export function editorSave(): Action {
-  return { type: EDITOR_SAVE };
+export function editorSave() {
+  return (dispatch) => {
+    dispatch({ type: EDITOR_SAVE });
+    dispatch(testRun());
+  };
 }
 
 export function editorSet(content: string): Action {
