@@ -36,6 +36,9 @@ export default class TextEditor extends React.Component<{
       this.ed.setPlaceholderText(placeholder);
     }
     // append editor to rendered div
-    document.querySelector(`#${name}`).appendChild(this.ed.getElement());
+    const div = document.querySelector(`#${name}`);
+    if (div) {
+      div.appendChild(this.ed.getElement());
+    }
   }
 }
