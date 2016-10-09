@@ -20,7 +20,7 @@ export function minVersion(command: string): Promise<boolean> {
     let minOrLater: Promise<boolean> = commandLine(command, '-v')
       .then((res: string) => isAboveVersion(res, minVersion));
     if (!minOrLater) {
-      resolve (false);
+      resolve(false);
     } else {
       resolve(true);
     }
