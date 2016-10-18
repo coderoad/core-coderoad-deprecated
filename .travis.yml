@@ -11,6 +11,7 @@ node_js:
   - '6.1'
 before_install:
   - npm i -g npm@latest
+  - npm i -g jest
 before_script:
   - npm prune
 after_success:

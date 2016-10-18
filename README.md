@@ -1,3 +1,4 @@
+[![npm](https://img.shields.io/npm/dt/core-coderoad.svg)](https://registry.npmjs.org/core-coderoad)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # Atom CodeRoad plugin
