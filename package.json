@@ -1,6 +1,5 @@
 {
   "name": "core-coderoad",
-  "version": "1.0.0",
   "description": "Interactive tutorial platform",
   "keywords": [
     "coderoad",
@@ -22,11 +21,15 @@
     "*.md"
   ],
   "main": "./lib/index.js",
-  "repository": "https://github.com/coderoad/core-coderoad",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderoad/core-coderoad.git"
+  },
   "scripts": {
     "compile": "tsc",
     "test": "jest",
-    "mocks": "tsc -p ./src/__mocks__"
+    "mocks": "tsc -p ./src/__mocks__",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "atom-plugin-command-line": "1.0.2",
@@ -58,7 +61,8 @@
     "spectron": "^3.4.0",
     "tslint": "^3.15.1",
     "tslint-react": "^1.1.0",
-    "typescript": "^2.0.3"
+    "typescript": "^2.0.3",
+    "semantic-release": "^4.3.5"
   },
   "jest": {
     "verbose": true,
